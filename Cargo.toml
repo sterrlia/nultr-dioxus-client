@@ -1,0 +1,25 @@
+[package]
+name = "nultr-dioxus-client"
+version = "0.1.0"
+authors = ["sterrlia <dev@sterrlia.com>"]
+license = "GPL-3.0-or-later"
+license-file = "LICENSE"
+edition = "2024"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+dioxus = { version = "0.6.0", features = ["router"] }
+tokio = {version = "1.45.1", features = ["rt"]}
+nultr-shared-lib = { path = "../shared-lib" }
+nultr-client-lib = { path = "../client-lib", features = ["dioxus-integration"]}
+rust-api-integrator = { path = "../rust-api-integrator", features = [] }
+anyhow = "1.0.98"
+dioxus-router = "0.6.3"
+getrandom = { version = "0.3.3", features = ["wasm_js"] }
+
+[features]
+default = ["web"]
+web = ["dioxus/web"]
+desktop = ["dioxus/desktop"]
+mobile = ["dioxus/mobile"]
