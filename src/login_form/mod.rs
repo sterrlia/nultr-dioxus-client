@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 use nultr_shared_lib::request::{AuthUserData, LoginRequest, LoginResponse};
-use rust_api_integrator::http::client::BasicHttpClientTrait;
+use rust_api_kit::http::client::BasicHttpClientTrait;
 
 use crate::{context::Services, error_list::DisplayError, event::send_event, state::{AuthState, AUTH_STATE}};
 

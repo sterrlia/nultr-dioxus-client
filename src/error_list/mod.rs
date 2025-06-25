@@ -2,7 +2,7 @@ use crate::event_listener;
 use dioxus::prelude::*;
 use nultr_client_lib::{define_error_event_enum, errors::IntoErrorMessage};
 use nultr_shared_lib::request::{AuthenticatedUnexpectedErrorResponse, LoginErrorResponse, UnexpectedErrorResponse};
-use rust_api_integrator::http::client::UnexpectedHttpError;
+use rust_api_kit::http::client::UnexpectedHttpError;
 
 
 define_error_event_enum! {

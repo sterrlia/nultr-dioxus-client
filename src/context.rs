@@ -2,7 +2,7 @@ use std::sync::Arc;
 
 use dioxus::prelude::*;
 use nultr_client_lib::config;
-use rust_api_integrator::http::client::HttpClient;
+use rust_api_kit::http::client::HttpClient;
 
 #[derive(Clone)]
 pub struct Services {
