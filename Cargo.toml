@@ -2,7 +2,6 @@
 name = "nultr-dioxus-client"
 version = "0.1.0"
 authors = ["sterrlia <dev@sterrlia.com>"]
-license = "GPL-3.0-or-later"
 license-file = "LICENSE"
 edition = "2024"
 
