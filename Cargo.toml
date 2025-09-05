@@ -11,7 +11,7 @@ edition = "2024"
 dioxus = { version = "0.6.0", features = ["router"] }
 tokio = {version = "1.45.1", features = ["rt"]}
 nultr-shared-lib = { path = "../shared-lib" }
-nultr-client-lib = { path = "../client-lib", features = ["dioxus-integration"]}
+nultr-client-lib = { path = "../client-lib", features = ["dioxus"]}
 rust-api-kit = { path = "../rust-api-kit", features = [] }
 anyhow = "1.0.98"
 dioxus-router = "0.6.3"
